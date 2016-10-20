@@ -1,0 +1,5 @@
+miniwc.py has a very simple interface. 
+So simple, that for any given input file, 
+there was only one way to execute miniwc.py on it. 
+However, wc proper has a much more complex interface. 
+Consider a simple source file, test1.txt:
