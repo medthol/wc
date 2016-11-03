@@ -1,0 +1,7 @@
+Hacking doctest
+
+Ideally, we should be able to use the set of tests we created for correctness for efficiency testing as well.
+There is a trade off, again. Correctness test might not tell us everything we want to know about efficiency!
+This is also where white box knowledge is helpful…if we know that we have only one path through the counting function, that is, we always count lines, words, and characters and just filter the results, then different flag combinations aren’t going to have much of a performance effect. (Note wc has a special path for -c!)
+
+However, it still might be nice to be able to specify the tests in a way similar to doctest. We could use our actual doctests, but then we need to write an extractor for our efficiency testing. Or we could design our our “test format” that was used by both our correctness and our efficiency testers.
