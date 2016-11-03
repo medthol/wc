@@ -21,7 +21,7 @@ def main(args):
             file_list.append(arg) 
 
     if len(file_list) == 0:
-        read_from_stdin = True # read from stdin
+        read_from_stdin = True # read from stdin when no file argument passed
 
     if not flag_c and not flag_w and not flag_l:
         flag_c, flag_l, flag_w = True, True, True
